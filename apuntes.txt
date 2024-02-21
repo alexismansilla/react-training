@@ -1,0 +1,30 @@
+React es una biblioteca
+de JavaScript para construir interfaces de usuario.
+
+No es imperativo, es declarativo.
+
+React siempre renderiza elementos de la interfaz de usuario.
+
+jsx es una extensión de JavaScript que permite escribir HTML en JavaScript.
+
+React utiliza un enfoque basado en componentes.
+
+
+Un componente:
+Es una funcion que retorna un elemento de React.
+
+Los nombres del componente siempre debe ser en cascal camel.
+
+cual es la diferencia entre un componente y un elemento de react?
+- Un componente es un factoria de elementos
+- Un elemento se renderiza en react y es lo que se ve en el navegador.
+
+
+los props son los atributos que se le pasan a un componente y no se pueden y no se deben modificar.
+loz props son inmutables y se debería crear una constante para manejarlos.
+
+
+DOM VIRTUAL
+es una representación en memoria del DOM real y es capaz de ver los cambios que se realizan en el DOM real y
+actualizar el DOM real con los cambios que se realizan en el DOM virtual.
+El es capaz de detectar cambios en el DOM virtual y si algun cambio se realizó en el DOM virtual, el DOM real se actualiza.
