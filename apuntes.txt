@@ -28,3 +28,23 @@ DOM VIRTUAL
 es una representación en memoria del DOM real y es capaz de ver los cambios que se realizan en el DOM real y
 actualizar el DOM real con los cambios que se realizan en el DOM virtual.
 El es capaz de detectar cambios en el DOM virtual y si algun cambio se realizó en el DOM virtual, el DOM real se actualiza.
+
+
+Cuando tenemos este código en nuestro archivo de JavaScript:
+```javascript
+
+    const updateBoard = () => {
+      const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
+    }
+
+    <Square key={index} index={index} updateBoard={updateBoard}/>
+```
+
+el updateBoard le estamos pasando la funcion al Square y no la ejecución de la funcion
+eso quiere decir que Square el encargado de ejecutar la funcion updateBoard.
+Es muy importante tener encuenta cuando le pasamos una funcion como updateBoard o updateBoard()
+
+conclusión:
+
+updateBoard -> le pasamos la funcion
+updateBoard() -> ejecutamos la funcion
